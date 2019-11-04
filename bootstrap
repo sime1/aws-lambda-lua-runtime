@@ -1,0 +1,5 @@
+#!/bin/sh
+cd $LAMBDA_TASK_ROOT
+export LUA_PATH="/opt/runtime/?.lua;/opt/rocks/share/lua/5.1/?.lua;;"
+export LUA_CPATH="/opt/rocks/lib/lua/5.1/?.so;;"
+/opt/bin/luajit /opt/runtime/runtime.lua
